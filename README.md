@@ -2,6 +2,7 @@
 
 MyBank is a mock bank app. 
 It is a secured three layered app and composed of frontend, api, database(MongoDB Atlas).
+This app is intended to be used on heroku.
 
 
 This app was made as a capstone project for MIT professional certificate for full-stack development program.
