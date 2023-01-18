@@ -1,0 +1,35 @@
+.outer {
+    margin-left: 0px;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 20vh;
+}
+
+.main-container{
+    height: 80vh;
+}
+
+.navbar-brand {
+    margin-left: 15px!important;
+}
+
+.brand-logo {
+    text-decoration:underline;
+    text-decoration-color: #56B3A2;
+}
+
+.nav-item {
+    margin-left: 15px!important;
+}
+
+.navbar-username{
+    color: #56B3A2!important;
+}
+
+@media (max-width: 576px) {
+    .navbar-username {
+        display:none!important;
+    }
+
+}
