@@ -13,7 +13,7 @@ export const accessTokenContext = createContext();
 //send request to api server and fetch acount info
 export async function findUser(token, email){
   try {
-    const url = `https://bank-app-api.herokuapp.com/account/search/${email}`;
+    const url = `${process.env.REACT_APP_custom_api_url}/account/search/${email}`;
     let res = await fetch(url, {
       method: 'GET',
       headers: {
@@ -29,7 +29,7 @@ export async function findUser(token, email){
 
 //find user using the user input and set it active user
 export async function updateUser(email, amount, accessToken, func){
-  const url = `https://bank-app-api.herokuapp.com/account/update/${email}/${amount}`;
+  const url = `${process.env.REACT_APP_custom_api_url}/account/update/${email}/${amount}`;
   try{
       let res = await fetch(url, {
           method: 'POST',

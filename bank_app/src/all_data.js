@@ -9,7 +9,7 @@ export default function AllData(){
         //fetch all data
         (async function(){
         try{
-            let res = await fetch('https://bank-app-api.herokuapp.com/account/all', {
+            let res = await fetch(`${process.env.REACT_APP_custom_api_url}/account/all`, {
                 method: 'GET',
                 headers: {
                     'Authorization': 'Bearer ' + accessToken
