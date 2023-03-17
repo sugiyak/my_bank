@@ -33,7 +33,7 @@ export default function CreateAccount(){
       if (password.length<8){alert('Please use more than 7 characters for password');
       return;};
 
-      const url = `https://bank-app-api.herokuapp.com/account/create/${name}/${email}/${password}/${role}`;
+      const url = `${process.env.REACT_APP_custom_api_url}/account/create/${name}/${email}/${password}/${role}`;
       (async ()=>{
         try {
             //sign up on database
