@@ -25,7 +25,7 @@ export default function Home(){
                     <p className="lead my-3">Deposit and save money. Login and logout without hassle.</p>
                 </div>
             </div>
-            <div className="row m-3">
+            <div className="row m-3 d-flex justify-content-center">
             { !currentUser && 
                 <>
                 <HomeCard
