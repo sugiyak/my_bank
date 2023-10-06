@@ -13,7 +13,7 @@ export const accessTokenContext = createContext();
 //send request to api server and fetch acount info
 export async function findUser(token, email){
   try {
-    const url = `https://${process.env.REACT_APP_custom_api_url}/account/search/${email}`;
+    const url = `${process.env.REACT_APP_custom_api_url}/account/search/${email}`;
     let res = await fetch(url, {
       method: 'GET',
       headers: {
